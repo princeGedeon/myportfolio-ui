@@ -2,13 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-
+import WorkSection from '../components/work'
 import Navbar from '../components/navbar'
 
 import ellipse from '../assets/img/Ellipse 2.svg'
 import boyimage from '../assets/img/firefox.tmp/boy-gc1a3b2402_1280.png'
 import montimage from '../assets/img/OBJECTS.svg'
+import down from '../assets/img/Down.svg'
 
+import linkdin from '../assets/img/LinkedIn Circled.svg'
+import twitter from '../assets/img/Twitter Circled.svg'
+import git from '../assets/img/GitHub.svg'
+
+
+import AboutSection from '../components/about'
 
 export default function Home() {
   return (
@@ -34,7 +41,7 @@ export default function Home() {
     </div>
 
 
-<div className="absolute bottom-0 w-full z-10 min-h-[400px]  overflow-hidden">
+<div className="absolute bottom-0 w-full z-10 min-h-[25em] md:min-h-[30em]  overflow-hidden">
         <Image
            src={boyimage}
         
@@ -68,13 +75,13 @@ export default function Home() {
 </div>
 <div class="w-full flex justify-between items-center  absolute bottom-5 z-30">
     <div class="flex flex-col md:flex-row gap-2 px-9 md:px-10 ">
-        <a href="#"><img src="img/GitHub.svg" class="shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full" alt="social" /></a>
-        <a href="#"><img src="img/LinkedIn Circled.svg "  class="shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full"   alt="social" /></a>
-        <a href="#"><img src="img/Twitter Circled.svg"  class="shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full"   alt="social" /></a>
+        <a href="#" className='shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full'><Image src={git} alt="social" /></a>
+        <a href="#" className='shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full'><Image src={linkdin}     alt="social" /></a>
+        <a href="#" className='shadow-sm dark:shadow-white  z-50 md:z-0 dark:bg-white dark:rounded-full'><Image src={twitter}   alt="social" /></a>
 
     </div>
     <div>
-        <a href="#footer" > <img class="animate-bounce  rounded-full  dark:bg-white    border-3 border-black mr-8" src="img/Down.svg"  alt="down"/></a>
+        <a className='px-5' href="#footer" > <Image className="animate-bounce  rounded-full  dark:bg-white    border-3 border-black mr-8" src={down} alt="down"/></a>
     </div>
 
    
@@ -97,6 +104,12 @@ export default function Home() {
             
             </div>
         </section>
+
+
+        <AboutSection />
+        <WorkSection />
+
+
     </div>
   )
 }
