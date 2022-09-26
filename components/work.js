@@ -33,20 +33,6 @@ const WorkSection = () => {
             <BlocWork />
 
             
-           
-               
-          
-            
-                
-            
-                
-                
-
-
-                
-
-
-
 
             </div>
             <div>

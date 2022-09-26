@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
+import Certification from '../components/certification'
 
 import WorkSection from '../components/work'
+import ServiceSection from '../components/service'
 import Navbar from '../components/navbar'
 
 import ellipse from '../assets/img/Ellipse 2.svg'
@@ -108,6 +111,8 @@ export default function Home() {
 
         <AboutSection />
         <WorkSection />
+        <ServiceSection />
+        <Certification />
 
 
     </div>
