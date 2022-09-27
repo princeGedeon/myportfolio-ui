@@ -73,7 +73,7 @@ export default function Home() {
 
 <div class="  px-9 md:px-10 pt-8   ">
     
-            <h3 class="text-sm md:text-md dark:text-white ">Hi,👋 I'm <span class="font-semibold">Prince Gédéon GUEDJE</span></h3>
+            <h3 class="text-sm md:text-md dark:text-white ">Hi,👋 I &apos;m <span class="font-semibold">Prince Gédéon GUEDJE</span></h3>
             <div class="my-2">
             <h1 class="text-3xl md:text-4xl xl:text-5xl md:left-35  font-semibold dark:text-white">ML Engineer, Devops <br/>& Web Fullstack </h1>
         </div>

@@ -1,15 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
 import ThemeToggle from './themeToggle';
+import Script from 'next/script'
 
 const Navbar = () => {
     return (
         <div className='z-40 bg-transparent'>
-            <Head>
-            <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+          
+            <Script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js" async ></Script>
 
 
-            </Head>
+           
           
 <nav class=" px-2 sm:px-4 py-2.5 roundedbg-[#E7E4DE] overflow-hidden  dark:bg-[#302C23]">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
