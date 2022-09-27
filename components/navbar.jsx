@@ -1,66 +1,52 @@
 import React from 'react';
+import Head from 'next/head';
+import ThemeToggle from './themeToggle';
 
 const Navbar = () => {
     return (
-        <div className='z-30 bg-transparent'>
-            <nav class="w-full   top-0 flex justify-between px-9 md:px-10 bg-transparent   dark:bg-[#302C23] ">
-                <div class="container py-5 flex justify-between items-center">
-                    <div class="flex items-center justify-center space-x-1">
+        <div className='z-40 bg-transparent'>
+            <Head>
+            <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+
+            </Head>
+          
+<nav class=" px-2 sm:px-4 py-2.5 roundedbg-[#E7E4DE] overflow-hidden  dark:bg-[#302C23]">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+  <a href="https://flowbite.com/" class="flex items-center">
+     
+  <div class="px-5 flex items-center justify-center space-x-1">
                         
                         <span class="text-xl font-bold text-[#000000] dark:text-white">Prince </span>
                         <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
                     </div>
+   </a>
+  <div class="flex md:order-2">
+  <ThemeToggle />
+      <button data-collapse-toggle="navbar-cta" type="button" class="z-20 inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="hidden fixed  top-0 md:static justify-between items-center w-full md:flex md:w-auto md:order-1  md:block " id="navbar-cta">
+    <ul class="z-30 flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 
-                    <ul class="hidden md:flex space-x-10 text-[#000000]font-semibold text-sm  dark:text-gray-100">
-                        <li class="hover:text-[#FEBA15]">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="hover:text-gray-500">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="hover:text-gray-500">
-                            <a href="#work">Work</a>
-                        </li>
-                        <li class="hover:text-gray-500">
-                            <a href="#service">Services</a>
-                        </li>
-
-                        <li class="hover:text-gray-500">
-                            <a href="#contact">Contacts</a>
-                        </li>
-                    </ul>
-                    <div class="hidden md:block"></div>
-                 
-                   
-                    <div id="hamberguer" class="space-y-1 = cursor-pointer md:hidden ">
-
-                        <div class="w-6 h-0.5 bg-black"></div>
-                        <div class="w-6 h-0.5 bg-black"></div>
-                        <div class="w-6 h-0.5 bg-black"></div>
-                        <div class="w-6 h-0.5 bg-black"></div>
-                    </div>
-
-                    <ul id="menu" class="hidden z-50 bg-[#E7E4DE] text-gray-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
-                        <li >
-                            <a class="hlink" href="#">HomePage</a>
-                        </li>
-                        <li >
-                            <a class="hlink" href="#about">About</a>
-                        </li>
-                        
-                        <li >
-                            <a class="hlink" href="#work">Works</a>
-                        </li>
-                        <li >
-                            <a class="hlink" href="#services">Mes Services</a>
-                        </li>
-                        <li >
-                            <a class="hlink" href="#contact">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav> 
         </div>
     );
 }

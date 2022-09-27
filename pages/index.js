@@ -7,6 +7,7 @@ import Certification from '../components/certification'
 import WorkSection from '../components/work'
 import ServiceSection from '../components/service'
 import Navbar from '../components/navbar'
+import Contact from '../components/contact'
 
 import ellipse from '../assets/img/Ellipse 2.svg'
 import boyimage from '../assets/img/firefox.tmp/boy-gc1a3b2402_1280.png'
@@ -20,7 +21,11 @@ import git from '../assets/img/GitHub.svg'
 
 import AboutSection from '../components/about'
 
+
 export default function Home() {
+
+  
+
   return (
     <div className="dark:bg-[#2F2F36] min-h-screen" >
 
@@ -44,7 +49,7 @@ export default function Home() {
     </div>
 
 
-<div className="absolute bottom-0 w-full z-10 min-h-[25em] md:min-h-[30em]  overflow-hidden">
+<div className="absolute bottom-0 w-full z-10 min-h-[20em] md:min-h-[24em]  overflow-hidden">
         <Image
            src={boyimage}
         
@@ -66,13 +71,13 @@ export default function Home() {
     </div>
 </div>
 
-<div class="absolute  top-1/6 px-9 md:px-10 pt-8 z-10  ">
+<div class="  px-9 md:px-10 pt-8   ">
     
             <h3 class="text-sm md:text-md dark:text-white ">Hi,👋 I'm <span class="font-semibold">Prince Gédéon GUEDJE</span></h3>
             <div class="my-2">
             <h1 class="text-3xl md:text-4xl xl:text-5xl md:left-35  font-semibold dark:text-white">ML Engineer, Devops <br/>& Web Fullstack </h1>
         </div>
-        <button class="py-2 px-5 mt-2 bg-[#FEBA15] z-40 rounded-md shadow-md dark:text-white">Hire me</button>
+        <button class="py-2 px-5 mt-2 bg-[#FEBA15] rounded-md shadow-md dark:text-white">Hire me</button>
 
 
 </div>
@@ -113,6 +118,7 @@ export default function Home() {
         <WorkSection />
         <ServiceSection />
         <Certification />
+        <Contact />
 
 
     </div>
