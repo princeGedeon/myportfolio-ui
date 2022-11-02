@@ -3,6 +3,8 @@ import React from 'react';
 
 import down from '../assets/img/Down.svg'
 
+import me from '../assets/img/cover-r4x3w1000-5eaad8ec2032c-aibrevet.jpg';
+
 const AboutSection = () => {
     return (
         <div>
@@ -46,11 +48,12 @@ const AboutSection = () => {
                     
                     <div className=" min-w-[200px] min-h-[250px] relative border border-2 border-black dark:border-white ">
                         <div className="absolute bg-slate-900 h-full w-full -top-5 -left-5 ">
-                           
-                            
+                          <div className='bg-red-500 h-full realtive'>
+                           <Image src={me} objectFit="cover" layout="fill" placeholder="empty" className='relative'/>
+                           </div> 
                         </div>
 
-                        <div className="rounded-full p-2 bg-white  -rotate-90 absolute -bottom-7 -left-7 border border-black dark:border-white  border-2 h-15 w-15">
+                        <div className="rounded-full p-2 w-12 animate-pulse h-12 bg-white  -rotate-90 absolute -bottom-7 -left-7 border border-black dark:border-white  border-2 h-15 w-15">
 
                             <Image src={down}  className="text-white" alt=""/>
                         </div>
