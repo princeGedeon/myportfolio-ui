@@ -1,7 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
+import Image from 'next/image';
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,23 +24,23 @@ const Certification = () => {
     <div class="relative min-h-[300px] sm:h-50 overflow-hidden rounded-lg md:min-h-[500px] md:h-96">
         
         <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
-            <img src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img  src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
     
         <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
-            <img src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img  src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
     
         <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
-            <img src="https://cdn.pixabay.com/photo/2018/10/20/03/26/young-3760179__340.jpg" className='object-cover w-full h-full' alt="..."/>
+            <img  src="https://cdn.pixabay.com/photo/2018/10/20/03/26/young-3760179__340.jpg" className='object-cover w-full h-full' alt="..."/>
         </div>
         
         <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
-            <img src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full -translate-x-1/2  object-cover w-full h-full -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img  src="https://animecorner.me/wp-content/uploads/2022/10/the-eminence-in-shadow-episode-1-preview-thumbnail.png" class="absolute block w-full -translate-x-1/2  object-cover w-full h-full -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
         
         <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
-            <img src="https://cdn.pixabay.com/photo/2018/10/20/03/26/young-3760179__340.jpg" class="absolute block w-full object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
+            <img  src="https://cdn.pixabay.com/photo/2018/10/20/03/26/young-3760179__340.jpg" class="absolute block w-full object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."/>
         </div>
     </div>
     

@@ -49,7 +49,7 @@ const AboutSection = () => {
                     <div className=" min-w-[200px] min-h-[250px] relative border border-2 border-black dark:border-white ">
                         <div className="absolute bg-slate-900 h-full w-full -top-5 -left-5 ">
                           <div className='bg-red-500 h-full realtive'>
-                           <Image src={me} objectFit="cover" layout="fill" placeholder="empty" className='relative'/>
+                           <Image alt='me profil card' src={me} objectFit="cover" layout="fill" placeholder="empty" className='relative'/>
                            </div> 
                         </div>
 

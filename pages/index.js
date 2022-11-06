@@ -50,7 +50,8 @@ export default function Home() {
 
 
 <div className="bg-transparent absolute bottom-0 w-full z-10 min-h-[20em] md:min-h-[24em]  overflow-hidden">
-        <Image
+        <Image 
+        alt='me picture'
            src={boyimage}
         
            layout="fill"

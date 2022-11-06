@@ -2,10 +2,10 @@ import React from 'react';
 import BlocWork from './bloc_work';
 import Card from './card';
 
-const Menu = ({menuItem,searchTerm}) => {
+const MenuThree = ({menuItem,searchTerm}) => {
     
     return (
-        <div className=' bg-blue grid gap-10  sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
+        <div className='  grid gap-10  sm:grid-cols-2 md:grid-cols-3 mx-auto px-auto'>
             {
 
                 menuItem
@@ -13,6 +13,8 @@ const Menu = ({menuItem,searchTerm}) => {
                 .filter((val)=> {
                     return val.title.includes(searchTerm);
                 })
+
+                .slice(0,3)
 
              
                 
@@ -30,4 +32,4 @@ const Menu = ({menuItem,searchTerm}) => {
     );
 }
 
-export default Menu;
+export default MenuThree;
